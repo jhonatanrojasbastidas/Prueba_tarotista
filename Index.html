@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Realiza tu primera tirada de tarot gratis | Tarotista Claudia del Valle</title>
+	<meta name="description" content="Tarot. Tarotista Claudia del Valle experta en consultas Tarot con alto n&uacute;mero de aciertos en Tarot. Videncia y oraculo. Haz tu primera tirada de tarot totalmente gratis">
+	<meta name="keywords" content="tarotista, videncia, videncia gratis, tirada tarot, tirada de tarot, oraculo, oraculo gratis">
+	<meta name="google-site-verification" content="EOYLeJld6zUQdZmN2hCnCW-Ax0KkeE8Y1f_s06ialLo" />
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="form.js" type="text/javascript"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+	<div class="popup-container">
+	<div class="popup-box">
+		<img src="img/wrong.gif" class="popup-close">
+		<p class="popup-blanco">Hoy <b class="popup-naranja">6</b> personas han consultado ya a <b>Carmen</b>.</p>
+		<p class="popup-blanco">Justo ahora acaba de colgar la &uacute;ltima llamada, llama y habla con ella</p>
+		<a href="tel:806552656" class="popup-telefono">
+			<div class="popup-boton"><img src="img/phone.png" class="popup-icono">
+				<b>806 25 45 45 45</b>
+			</div>
+		</a>
+	</div>
+</div>
+<div id="wrap">
+	<div id="menu">
+		 Tarotista Carmen Moreno
+	</div>
+    <div id="cuerpo">
+        <div id="subcuerpo">
+        	<div id="header" class="header_1">
+        		<div>
+        			<h1>Tirada Gratis con Baraja Española</h1>
+        		</div>
+				<br>
+        		<div >
+        			<div id="phone">
+        				<a href="tel:80625454545">806 25 45 45 45</a>
+        			</div>
+					<br>
+					HABLA CON CARMEN AHORA
+        		</div>
+				<br>
+        	</div>
+			<Br>
+			<Br>
+			<Br>		
+			<br>
+			<br>		
+        	<div id="header" class="header_2">
+        		<div id="header_left">
+        			<h1 class="titulo_mobile">Tirada Gratis con Baraja Española</h1>
+        		</div>
+        		<div id="header_right">
+        			<div id="phone">
+        				<a href="tel:806 25 45 45 45">806 25 45 45 45</a>
+        			</div>
+        		</div>
+        	</div>
+        	<div id="container">
+        		<div id="container_left">
+					<div class="col clearfix">
+					<div id="baraja">
+						<h1 class="titulo_header_2">Gratis tirada de tarot</h1>
+						<h3><span class="haz_consulta">Destapa las 4 cartas de la baraja</span></h3>
+					    <span id="carta0" class="carta"><a href="javascript:darCarta(0);" title="Tarot gratis"><img src="img/cartas/oro.jpg" alt="tirada tarot" class="carta"/></a></span>
+						<span id="carta1" class="carta"><a href="javascript:darCarta(1);" title="Tarot"><img src="img/cartas/copa.jpg" alt="tarotista" class="carta" /></a></span>
+						<span id="carta2" class="carta"><a href="javascript:darCarta(2);" title="Tarot gratuito"><img src="img/cartas/basto.jpg" alt="consulta de tarot" class="carta" /></a></span>
+                        <span id="carta2" class="carta"><a href="javascript:darCarta(2);" title="Tarot gratuito"><img src="img/cartas/espada.jpg" alt="consulta de tarot" class="carta" /></a></span>
+						<div id="mazo">
+							<br>
+							<br>
+							<img src="img/cartas/baraja.png" alt="baraja de tarot" width="170" height="108"  usemap="#Map" id="baraja_cartas" />
+							<map name="Map" id="Map">
+								<area shape="poly" coords="10,30,98,60,150,25,60,5" href="javascript:levantar();" title="tirada de tarot" alt="tirada de tarot"/>
+							</map>
+						</div>
+						<div id="mazo_off">
+							<h3><span class="haz_consulta" style="color:#9e0101;">¿Cual es tu pregunta?</span></h3>
+							<img src="img/mazo_off.png" alt="&iquest;Cual es su pregunta?" class="mobile_off">
+						</div>
+						<script type="text/javascript">
+							var posicion = 0;
+							var posicionMax = 2;
+							var posicionocupada=new Array(0,0,0);
+							var cartas = new Array(4,15,18);
+						</script>
+					</div>
+				</div>
+        		</div>
+        		<div id="container_right">
+        			<div class="col clearfix">
+        			<div id="formulario">
+
+					<form name="form" id="form" action="" method="post">
+												<input type="hidden" name="tirada" value="[4,15,18,5,2]" />
+						<h3><span class="haz_consulta">Consultame <span class="titulo">GRATIS</span></span></h3>
+						<textarea name="question" id="question" class="textareaCampo" placeholder="Preguntamé lo que quieras conocer"></textarea>
+						<h3>Indica tus datos para recibir tu Consulta Gratuita</h3>
+						<table>
+							<tr>
+								<td class="etiquetaCampo">Nombre*</td>
+								<td ><input type="text" name="name" id="name" value="" class="inputCampo" placeholder="(sin apellidos)"/></td>
+							</tr>
+							<tr style="display:none;">
+								<td class="etiquetaCampo">Apellidos*</td>
+								<td ><input type="text" name="surname" id="surname" value="" class="inputCampo" /></td>
+							</tr>
+							<tr>
+								<td class="etiquetaCampo">M&oacute;vil*</td>
+								<td ><input type="text" name="mobile" id="mobile" value="" class="inputCampo" /></td>
+							</tr>
+							<tr style="display: none;">
+								<td class="etiquetaCampo">Tel&eacute;fono Fijo</td>
+								<td ><input type="text" name="fixed" id="fixed" value="" class="inputCampo" /></td>
+							</tr>
+							<tr>
+								<td class="etiquetaCampo">Email*</td>
+								<td ><input type="text" name="email" id="email" value="" class="inputCampo" /></td>
+							</tr>
+							<tr>
+								<td class="etiquetaCampo">Pa&iacute;s* </td>
+								<td >
+									<select name="country" id="country" class="selectCampo">
+										<option value="1">Afganistán</option><option value="3">Albania</option><option value="82">Alemania</option><option value="6">Andorra</option><option value="7">Angola</option><option value="8">Anguila</option><option value="9">Antártida</option><option value="10">Antigua y Barbuda</option><option value="196">Arabia Saudí</option><option value="4">Argelia</option><option value="11">Argentina</option><option value="12">Armenia</option><option value="13">Aruba</option><option value="14">Australia</option><option value="15">Austria</option><option value="16">Azerbaiyán</option><option value="17">Bahamas</option><option value="18">Bahréin</option><option value="19">Bangladesh</option><option value="20">Barbados</option><option value="22">Bélgica</option><option value="23">Belice</option><option value="24">Benín</option><option value="25">Bermudas</option><option value="21">Bielorrusia</option><option value="27">Bolivia</option><option value="29">Bosnia-Herzegovina</option><option value="30">Botsuana</option><option value="32">Brasil</option><option value="34">Brunéi</option><option value="35">Bulgaria</option><option value="36">Burkina Faso</option><option value="37">Burundi</option><option value="26">Bután</option><option value="38">Cabo Verde</option><option value="39">Camboya</option><option value="40">Camerún</option><option value="41">Canadá</option><option value="44">Chad</option><option value="45">Chile</option><option value="46">China</option><option value="58">Chipre</option><option value="97">Ciudad del Vaticano</option><option value="49" selected="selected">Colombia</option><option value="50">Comoras</option><option value="51">Congo</option><option value="118">Corea del Norte</option><option value="119">Corea del Sur</option><option value="110">Costa de Marfil</option><option value="54">Costa Rica</option><option value="55">Croacia</option><option value="56">Cuba</option><option value="57">Curaçao</option><option value="60">Dinamarca</option><option value="62">Dominica</option><option value="64">Ecuador</option><option value="65">Egipto</option><option value="66">El Salvador</option><option value="235">Emiratos Árabes Unidos</option><option value="68">Eritrea</option><option value="203">Eslovaquia</option><option value="204">Eslovenia</option><option value="210">España</option><option value="237">Estados Unidos</option><option value="69">Estonia</option><option value="70">Etiopía</option><option value="176">Filipinas</option><option value="74">Finlandia</option><option value="73">Fiyi</option><option value="75">Francia</option><option value="79">Gabón</option><option value="80">Gambia</option><option value="81">Georgia</option><option value="83">Ghana</option><option value="84">Gibraltar</option><option value="87">Granada</option><option value="85">Grecia</option><option value="86">Groenlandia</option><option value="88">Guadalupe</option><option value="89">Guam</option><option value="90">Guatemala</option><option value="76">Guayana Francesa</option><option value="91">Guernsey</option><option value="92">Guinea</option><option value="67">Guinea Ecuatorial</option><option value="93">Guinea-Bissau</option><option value="94">Guyana</option><option value="95">Haití</option><option value="98">Honduras</option><option value="100">Hungría</option><option value="102">India</option><option value="103">Indonesia</option><option value="104">Irán</option><option value="105">Iraq</option><option value="106">Irlanda</option><option value="31">Isla Bouvet</option><option value="47">Isla Christmas</option><option value="107">Isla de Man</option><option value="164">Isla Niue</option><option value="165">Isla Norfolk</option><option value="101">Islandia</option><option value="2">Islas Åland</option><option value="42">Islas Caimán</option><option value="48">Islas Cocos</option><option value="53">Islas Cook</option><option value="72">Islas Feroe</option><option value="208">Islas Georgia del Sur y Sandwich del Sur</option><option value="96">Islas Heard y McDonald</option><option value="71">Islas Malvinas</option><option value="166">Islas Marianas del Norte</option><option value="140">Islas Marshall</option><option value="238">Islas menores alejadas de los Estados Unidos</option><option value="205">Islas Salomón</option><option value="231">Islas Turcas y Caicos</option><option value="244">Islas Vírgenes Británicas</option><option value="245">Islas Vírgenes de los Estados Unidos</option><option value="108">Israel</option><option value="109">Italia</option><option value="111">Jamaica</option><option value="112">Japón</option><option value="113">Jersey</option><option value="114">Jordania</option><option value="115">Kazajistán</option><option value="116">Kenia</option><option value="122">Kirguistán</option><option value="117">Kiribati</option><option value="120">Kosovo</option><option value="121">Kuwait</option><option value="123">Laos</option><option value="126">Lesoto</option><option value="124">Letonia</option><option value="125">Líbano</option><option value="127">Liberia</option><option value="128">Libia</option><option value="129">Liechtenstein</option><option value="130">Lituania</option><option value="131">Luxemburgo</option><option value="133">Macedonia</option><option value="134">Madagascar</option><option value="136">Malasia</option><option value="135">Malaui</option><option value="137">Maldivas</option><option value="138">Mali</option><option value="139">Malta</option><option value="152">Marruecos</option><option value="141">Martinica</option><option value="143">Mauricio</option><option value="142">Mauritania</option><option value="144">Mayotte</option><option value="145">México</option><option value="146">Micronesia</option><option value="147">Moldavia</option><option value="148">Mónaco</option><option value="149">Mongolia</option><option value="150">Montenegro</option><option value="151">Montserrat</option><option value="153">Mozambique</option><option value="154">Myanmar</option><option value="155">Namibia</option><option value="156">Nauru</option><option value="157">Nepal</option><option value="161">Nicaragua</option><option value="162">Níger</option><option value="163">Nigeria</option><option value="167">Noruega</option><option value="159">Nueva Caledonia</option><option value="160">Nueva Zelanda</option><option value="168">Omán</option><option value="158">Países Bajos</option><option value="169">Pakistán</option><option value="170">Palau</option><option value="171">Palestina</option><option value="172">Panamá</option><option value="173">Papúa Nueva Guinea</option><option value="174">Paraguay</option><option value="175">Perú</option><option value="177">Pitcairn</option><option value="77">Polinesia Francesa</option><option value="178">Polonia</option><option value="179">Portugal</option><option value="180">Puerto Rico</option><option value="181">Qatar</option><option value="99">Región Administrativa Especial de Hong Kong de la República Popular China</option><option value="132">Región Administrativa Especial de Macao de la República Popular China</option><option value="236">Reino Unido</option><option value="43">República Centroafricana</option><option value="59">República Checa</option><option value="52">República Democrática del Congo</option><option value="63">República Dominicana</option><option value="182">Reunión</option><option value="185">Ruanda</option><option value="183">Rumanía</option><option value="184">Rusia</option><option value="247">Sáhara Occidental</option><option value="193">Samoa</option><option value="5">Samoa Americana</option><option value="186">San Bartolomé</option><option value="188">San Cristóbal y Nieves</option><option value="28">San Eustaquio y Saba</option><option value="194">San Marino</option><option value="202">San Martín</option><option value="190">San Martín</option><option value="191">San Pedro y Miquelón</option><option value="192">San Vicente y las Granadinas</option><option value="187">Santa Elena</option><option value="189">Santa Lucía</option><option value="195">Santo Tomé y Príncipe</option><option value="197">Senegal</option><option value="198">Serbia</option><option value="199">Seychelles</option><option value="200">Sierra Leona</option><option value="201">Singapur</option><option value="218">Siria</option><option value="206">Somalia</option><option value="211">Sri Lanka</option><option value="215">Suazilandia</option><option value="207">Sudáfrica</option><option value="212">Sudán</option><option value="216">Suecia</option><option value="217">Suiza</option><option value="209">Sur de Sudán</option><option value="213">Surinam</option><option value="214">Svalbard y Jan Mayen</option><option value="222">Tailandia</option><option value="219">Taiwán</option><option value="221">Tanzania</option><option value="220">Tayikistán</option><option value="33">Territorio Británico del Océano Índico</option><option value="78">Territorios Australes Franceses</option><option value="223">Timor Oriental</option><option value="224">Togo</option><option value="225">Tokelau</option><option value="226">Tonga</option><option value="227">Trinidad y Tobago</option><option value="228">Túnez</option><option value="230">Turkmenistán</option><option value="229">Turquía</option><option value="232">Tuvalu</option><option value="234">Ucrania</option><option value="233">Uganda</option><option value="239">Uruguay</option><option value="240">Uzbekistán</option><option value="241">Vanuatu</option><option value="242">Venezuela</option><option value="243">Vietnam</option><option value="246">Wallis y Futuna</option><option value="248">Yemen</option><option value="61">Yibuti</option><option value="249">Zambia</option><option value="250">Zimbabue</option>									</select>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td class="etiquetaCampo">Nacimiento*</td>
+								<td>
+									<select name="day" id="day" class="selectCampo date">
+																					<option value="01">01</option>
+																						<option value="02">02</option>
+																						<option value="03">03</option>
+																						<option value="04">04</option>
+																						<option value="05">05</option>
+																						<option value="06">06</option>
+																						<option value="07">07</option>
+																						<option value="08">08</option>
+																						<option value="09">09</option>
+																						<option value="10">10</option>
+																						<option value="11">11</option>
+																						<option value="12">12</option>
+																						<option value="13">13</option>
+																						<option value="14">14</option>
+																						<option value="15">15</option>
+																						<option value="16">16</option>
+																						<option value="17">17</option>
+																						<option value="18">18</option>
+																						<option value="19">19</option>
+																						<option value="20">20</option>
+																						<option value="21">21</option>
+																						<option value="22">22</option>
+																						<option value="23">23</option>
+																						<option value="24">24</option>
+																						<option value="25">25</option>
+																						<option value="26">26</option>
+																						<option value="27">27</option>
+																						<option value="28">28</option>
+																						<option value="29">29</option>
+																						<option value="30">30</option>
+																						<option value="31">31</option>
+																				</select>
+									<select name="month" id="month" class="selectCampo date">
+																					<option value="01">01</option>
+																					<option value="02">02</option>
+																					<option value="03">03</option>
+																					<option value="04">04</option>
+																					<option value="05">05</option>
+																					<option value="06">06</option>
+																					<option value="07">07</option>
+																					<option value="08">08</option>
+																					<option value="09">09</option>
+																					<option value="10">10</option>
+																					<option value="11">11</option>
+																					<option value="12">12</option>
+																			</select>
+									<select name="year" id="year" class="selectCampo date">
+																					<option value="2021">2021</option>
+																					<option value="2020">2020</option>
+																					<option value="2019">2019</option>
+																					<option value="2018">2018</option>
+																					<option value="2017">2017</option>
+																					<option value="2016">2016</option>
+																					<option value="2015">2015</option>
+																					<option value="2014">2014</option>
+																					<option value="2013">2013</option>
+																					<option value="2012">2012</option>
+																					<option value="2011">2011</option>
+																					<option value="2010">2010</option>
+																					<option value="2009">2009</option>
+																					<option value="2008">2008</option>
+																					<option value="2007">2007</option>
+																					<option value="2006">2006</option>
+																					<option value="2005">2005</option>
+																					<option value="2004">2004</option>
+																					<option value="2003">2003</option>
+																					<option value="2002">2002</option>
+																					<option value="2001">2001</option>
+																					<option value="2000">2000</option>
+																					<option value="1999">1999</option>
+																					<option value="1998">1998</option>
+																					<option value="1997">1997</option>
+																					<option value="1996">1996</option>
+																					<option value="1995">1995</option>
+																					<option value="1994">1994</option>
+																					<option value="1993">1993</option>
+																					<option value="1992">1992</option>
+																					<option value="1991">1991</option>
+																					<option value="1990">1990</option>
+																					<option value="1989">1989</option>
+																					<option value="1988">1988</option>
+																					<option value="1987">1987</option>
+																					<option value="1986">1986</option>
+																					<option value="1985">1985</option>
+																					<option value="1984">1984</option>
+																					<option value="1983">1983</option>
+																					<option value="1982">1982</option>
+																					<option value="1981">1981</option>
+																					<option value="1980">1980</option>
+																					<option value="1979">1979</option>
+																					<option value="1978">1978</option>
+																					<option value="1977">1977</option>
+																					<option value="1976">1976</option>
+																					<option value="1975">1975</option>
+																					<option value="1974">1974</option>
+																					<option value="1973">1973</option>
+																					<option value="1972">1972</option>
+																					<option value="1971">1971</option>
+																					<option value="1970">1970</option>
+																					<option value="1969">1969</option>
+																					<option value="1968">1968</option>
+																					<option value="1967">1967</option>
+																					<option value="1966">1966</option>
+																					<option value="1965">1965</option>
+																					<option value="1964">1964</option>
+																					<option value="1963">1963</option>
+																					<option value="1962">1962</option>
+																					<option value="1961">1961</option>
+																					<option value="1960">1960</option>
+																					<option value="1959">1959</option>
+																					<option value="1958">1958</option>
+																					<option value="1957">1957</option>
+																					<option value="1956">1956</option>
+																					<option value="1955">1955</option>
+																					<option value="1954">1954</option>
+																					<option value="1953">1953</option>
+																					<option value="1952">1952</option>
+																					<option value="1951">1951</option>
+																					<option value="1950">1950</option>
+																					<option value="1949">1949</option>
+																					<option value="1948">1948</option>
+																					<option value="1947">1947</option>
+																					<option value="1946">1946</option>
+																					<option value="1945">1945</option>
+																					<option value="1944">1944</option>
+																					<option value="1943">1943</option>
+																					<option value="1942">1942</option>
+																					<option value="1941">1941</option>
+																					<option value="1940">1940</option>
+																					<option value="1939">1939</option>
+																					<option value="1938">1938</option>
+																					<option value="1937">1937</option>
+																					<option value="1936">1936</option>
+																					<option value="1935">1935</option>
+																					<option value="1934">1934</option>
+																					<option value="1933">1933</option>
+																					<option value="1932">1932</option>
+																					<option value="1931">1931</option>
+																					<option value="1930">1930</option>
+																					<option value="1929">1929</option>
+																					<option value="1928">1928</option>
+																					<option value="1927">1927</option>
+																					<option value="1926">1926</option>
+																					<option value="1925">1925</option>
+																					<option value="1924">1924</option>
+																					<option value="1923">1923</option>
+																					<option value="1922">1922</option>
+																					<option value="1921">1921</option>
+																					<option value="1920">1920</option>
+																					<option value="1919">1919</option>
+																					<option value="1918">1918</option>
+																					<option value="1917">1917</option>
+																					<option value="1916">1916</option>
+																					<option value="1915">1915</option>
+																					<option value="1914">1914</option>
+																					<option value="1913">1913</option>
+																					<option value="1912">1912</option>
+																					<option value="1911">1911</option>
+																					<option value="1910">1910</option>
+																					<option value="1909">1909</option>
+																					<option value="1908">1908</option>
+																					<option value="1907">1907</option>
+																					<option value="1906">1906</option>
+																					<option value="1905">1905</option>
+																					<option value="1904">1904</option>
+																					<option value="1903">1903</option>
+																					<option value="1902">1902</option>
+																					<option value="1901">1901</option>
+																			</select>
+								</td>
+						  	</tr>
+							<tr>
+								<td colspan="2">&nbsp;</td>
+							</tr>
+								<tr>
+									<td colspan="2" class="checking">
+										<input type="checkbox" value="1" name="privacy" id="privacy"  />
+										He le&iacute;do y acepto la <a href="#" title="Politica de privacidad" class="defecto" onclick="javascript:window.open('politica-privacidad.php','POLITICA_PRIVACIDAD','width=517,height=500,scrollbars=1,top=50,left=50');" rel="nofollow">pol&iacute;tica de privacidad</a>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">&nbsp;</td>
+								</tr>
+							  <tr>
+								 <td colspan="2">
+								 	<input type="button" name="button_submit" onclick="vld();" value="Enviar" class="selectCampo" />
+
+								</td>
+							  </tr>
+						</table>
+						<textarea rows="" cols="25">Dejanos tu opinión</textarea>
+						</form>
+					</div>
+        		</div>
+				</div>
+        	</div>
+
+	       </div>
+    <div class="salto">&nbsp;</div>
+    
+</div>   
+</div>
+<footer>
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-12 col-lg-6 pl-0 pr-0"> 
+			  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img src="img/gitana.jpg" class="d-block w-100" alt="Gitana">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/gitana2.jpg" class="d-block w-100" alt="Gitana2">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/Para-qué-sirve-la-bola-de-cristal-2-768x578.jpg" class="d-block w-100" alt="Gitana3">
+					</div>
+				  </div>
+				</div>
+		  </div>
+		<div class="col-12 col-lg-6">
+			<h2 class="mt-4">Tarotista Carmen Moreno</h2>
+			<p>Te doy la bienvenida a mi espacio virtual de Lectura Gratis del Tarot con Baraja Española. Aunque es un tipo de Tarot poco conocido desde siempre hemos utilizado para leer el futuro la baraja española. En España, de hecho, sólo se utilizaba ésta, ya que el Tarot Marsellés llegó más tarde. Aunque me he formado en otras disciplinas esotéricas, los casi 30 años que llevo dedicándome a esto me han demostrado que la Baraja Española es el arte adivinatorio más veraz y efectivo de todos los que existen.
+			</p>
+			<h2 class="mt-4">¿Qué es el Tarot de la Baraja Española?</h2>
+			<p>
+				La baraja española consta de 48 cartas divididas en 4 palos: copas, oros, espadas y bastos. Además, también forman parte del grupo de los Arcanos menores del Tarot. En el caso de las Copas, este palo está relacionado con la dimensión emocional de las personas; los Oros, se vinculan al éxito o fracaso material y reconocimiento ajeno; las Espadas aluden a la salud, y los Bastos al trabajo.
+			</p>
+			<h2 class="mt-4">¿Cómo funciona el Tarot de la Baraja Española?</h2>
+			<p>
+				La tirada del tarot con baraja española nos permite conocer situaciones actuales o que sucederán en el futuro, una herramienta 100% efectiva para conocer qué problemas nos aguardará el destino.
+				Para la consulta del tarot con baraja de España basta con escribir qué situación te preocupa, rellenar tus datos y sacar del mazo 4 cartas, una de cada palo para que pueda hacerte un diagnóstico completo sobre lo que deseas saber.
+				¡Encuentra todo lo que el tarot de baraja española tiene para ofrecerte!
+			</p>
+		  </div>
+		</div>
+		</div>
+</footer>
+</body>
+</html>
